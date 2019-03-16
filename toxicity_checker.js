@@ -13,7 +13,7 @@ const helpMessage = 'This bot is designed to monitor toxicity and mute the membe
 function activateDiscord() {
         const Discord = require("discord.js");
         const bot = new Discord.Client();
-        const TOKEN = "NTU1MDQ3OTUzNjE0NTAzOTY1.D2lsjQ.syNUjLXKNOGjg7-OBIW842Kj-z4";
+        const TOKEN = "";
 
         const settingsPath = "./settings.json";
 
@@ -176,11 +176,11 @@ function activateDiscord() {
         }, timeToRefresh);
         bot.on('ready', () => {
                 guild = bot.guilds.find(g => 
-                        g.id === "341240795636039680"
+                        g.id === ""
                 );
                 mutedNibber = guild.roles.find(r => r.name === 'muted-nibber');
                 generalChannel = guild.channels.find(c =>
-                        c.id === "341240795636039680"
+                        c.id === ""
                 );
                 bot.guilds.forEach(guild => {
                         if (!guild.roles.has(mutedNibber.id)) {
