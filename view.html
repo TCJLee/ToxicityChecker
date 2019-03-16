@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    </head>
+    <body>
+        <p id="consoleP"></p>
+        <button onclick="classifySent(prompt('Sentence'), 'consoleP', () => {alert('meme')})">classify</button>
+    </body>
+    <script lang="javascript" src="./toxicity_checker.js"></script>
+</html>

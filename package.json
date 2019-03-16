@@ -1,0 +1,17 @@
+{
+  "name": "toxicitychecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "toxicity_checker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.0.1",
+    "@tensorflow/tfjs": "^1.0.0",
+    "discord.js": "^11.4.2",
+    "node-fetch": "^2.3.0"
+  }
+}
